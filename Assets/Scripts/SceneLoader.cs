@@ -4,13 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class MusicPlayer : MonoBehaviour
+public class SceneLoader : MonoBehaviour
 {
-    private void Awake()
-    {
-        //GameObject[] objs = GameObject.FindGameObjectsWithTag("music");
-        DontDestroyOnLoad(gameObject);
-    }
     // Start is called before the first frame update
     void Start()
     {
