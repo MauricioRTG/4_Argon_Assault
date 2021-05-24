@@ -135,7 +135,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1071391657, guid: 192b7fe2500f5e0449f21c651bc0474c, type: 3}
       propertyPath: m_Name
-      value: Bullets Right
+      value: Gun Right
       objectReference: {fileID: 0}
     - target: {fileID: 1071391658, guid: 192b7fe2500f5e0449f21c651bc0474c, type: 3}
       propertyPath: CollisionModule.enabled
@@ -149,6 +149,18 @@ PrefabInstance:
       propertyPath: CollisionModule.collisionMessages
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1374112139, guid: 192b7fe2500f5e0449f21c651bc0474c, type: 3}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1374112139, guid: 192b7fe2500f5e0449f21c651bc0474c, type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 1434568897}
+    - target: {fileID: 1374112139, guid: 192b7fe2500f5e0449f21c651bc0474c, type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 356120859}
     - target: {fileID: 1374112144, guid: 192b7fe2500f5e0449f21c651bc0474c, type: 3}
       propertyPath: deathFX
       value: 
@@ -244,13 +256,19 @@ PrefabInstance:
     - target: {fileID: 6957863635894721271, guid: 192b7fe2500f5e0449f21c651bc0474c,
         type: 3}
       propertyPath: m_Name
-      value: Bullets Left
+      value: Gun Left
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 192b7fe2500f5e0449f21c651bc0474c, type: 3}
 --- !u!1 &150287646 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2401212080217104910, guid: 192b7fe2500f5e0449f21c651bc0474c,
+    type: 3}
+  m_PrefabInstance: {fileID: 150287645}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &356120859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6957863635894721271, guid: 192b7fe2500f5e0449f21c651bc0474c,
     type: 3}
   m_PrefabInstance: {fileID: 150287645}
   m_PrefabAsset: {fileID: 0}
@@ -380,7 +398,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b2210ea1b0c4547a9112f39529e295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scorePerHit: 12
 --- !u!1 &484486459
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 22590761491294207, guid: fc6989c7678bec840aa70ba87926bae6, type: 3}
   parent: {fileID: 588841629}
+  scorePerHit: 100
 --- !u!1 &1149396891
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,6 +907,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 150287645}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1434568897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1071391657, guid: 192b7fe2500f5e0449f21c651bc0474c,
+    type: 3}
+  m_PrefabInstance: {fileID: 150287645}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1569756540 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1090395654553690, guid: e14d375f5a36551479fc2f172353b1ba,
@@ -909,6 +933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 22590761491294207, guid: fc6989c7678bec840aa70ba87926bae6, type: 3}
   parent: {fileID: 588841629}
+  scorePerHit: 12
 --- !u!1001 &1596980763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1061,6 +1086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 22590761491294207, guid: fc6989c7678bec840aa70ba87926bae6, type: 3}
   parent: {fileID: 588841629}
+  scorePerHit: 12
 --- !u!1001 &1710536478
 PrefabInstance:
   m_ObjectHideFlags: 0
